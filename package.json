@@ -1,0 +1,14 @@
+{
+  "name": "calsyweb",
+  "version": "1.0.0",
+  "description": "HTML5 web calculator",
+  "author": "MXPServer 20953 onetechguy <73059135+MXP2095onetechguy@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server ./publicapp --port 0 --gzip -S -C cert.pem -K key.pem"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {}
+}

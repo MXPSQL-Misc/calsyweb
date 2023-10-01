@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Calsyweb</title>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="icon" href="favicon.ico">
+		<link rel="manifest" href="/calsyweb.webmanifest">
+		
+		<script src="math.js"></script>
+	</head>
+	<body>
+		<h3>Hello</h3>
+		<script src="app.js"></script>
+		<script>
+		if('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js', { scope: '/' });
+		}
+		</script>
+	</body>
+</html>
