@@ -4,12 +4,12 @@ self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
     cache.addAll([
-      '/',
-      '/math.js',
-	  '/sw.js',
-	  '/calsyweb.webmanifest',
-	  '/index.html',
-	  '/app.js'
+      './',
+      './math.js',
+	  './sw.js',
+	  './calsyweb.webmanifest',
+	  './index.html',
+	  './app.js'
     ]);
   })());
 });
