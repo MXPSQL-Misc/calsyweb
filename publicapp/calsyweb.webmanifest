@@ -4,7 +4,7 @@
     "short_name": "CalsyWeb",
 	"id": "/",
     "description": "An HTML5 PWA Calculator",
-    "start_url": "/",
+    "start_url": "./",
     "background_color": "#2f3d58",
     "theme_color": "#2f3d58",
     "orientation": "portrait",

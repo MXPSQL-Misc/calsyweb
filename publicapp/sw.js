@@ -1,4 +1,4 @@
-const CACHE_NAME = `CalsyWeb-v1`;
+const CACHE_NAME = `CalsyWeb-v2`;
 
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
@@ -25,13 +25,15 @@ self.addEventListener('fetch', event => {
     const cachedResponse = await cache.match(event.request);
     if (cachedResponse) {
 		
-      return cachedResponse;
+		return cachedResponse;
     } else {
 		
         try {
-          const fetchResponse = await fetch(event.request);
-          cache.put(event.request, fetchResponse.clone());
-          return fetchResponse;
+			if (!(event.request.url.indexOf('http') === 0)) return;
+			const fetchResponse = await fetch(event.request);
+		  
+			cache.put(event.request, fetchResponse.clone());
+			return fetchResponse;
         } catch (e) {
 			;
         }
