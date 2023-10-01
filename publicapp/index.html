@@ -4,14 +4,78 @@
 		<title>Calsyweb</title>
 		
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="icon" href="favicon.ico">
 		<link rel="manifest" href="./calsyweb.webmanifest">
 		
+		<link rel="stylesheet" href="./bootstrap.css">
 		<script src="math.js"></script>
+		<script src="bootstrap.js"></script>
 	</head>
 	<body>
-		<h3>Hello</h3>
+		<h3>CalsyWeb</h3>
+		<hr>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<p>Expression Input</p>
+					<textarea id="input"></textarea>
+				</div>
+				
+				<div class="col-sm">
+					<p>Expression Output</p>
+					<textarea id="output" disabled></textarea>
+				</div>
+			</div>
+		</div>
+		<hr>
+		
+		
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<p>Number Pad</p>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+								<button id="btn-num-clear">Clear</button>
+							</div>
+							<div class="col-sm">
+								<button id="btn-num-0">0</button>
+							</div>
+							<div class="col-sm">
+								<button id="Equal">=</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm">
+					<p>Function Pad</p>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
 		<script src="app.js"></script>
 		<script>
 		if('serviceWorker' in navigator) {

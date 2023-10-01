@@ -6,10 +6,14 @@ self.addEventListener('install', event => {
     cache.addAll([
       './',
       './math.js',
+	  
 	  './sw.js',
 	  './calsyweb.webmanifest',
 	  './index.html',
-	  './app.js'
+	  './app.js',
+	  
+	  './bootstrap.css',
+	  './bootstrap.js'
     ]);
   })());
 });
