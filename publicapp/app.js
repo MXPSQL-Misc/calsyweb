@@ -65,11 +65,11 @@ math.import({
 
 clr.onclick = function() { outx.value = ""; intx.value = ""; }
 
-
-meval.onclick = function(){
+const mev = function(){
 	output.disabled = false;
 	try{
-		output.value = meth.evaluate(intx.value);
+		let mevalres = meth.evaluate(intx.value);
+		output.value = ((Array.isArray(mevalres) || typeof mevalres === 'object') ? mevalres.entries[0] : mevalres);
 	}
 	catch(e){
 		var emgs = `Math Eval Error: ${e}`;
@@ -77,4 +77,13 @@ meval.onclick = function(){
 		window.alert(emgs);
 	}
 	output.disabled = true;
+}
+
+meval.onclick = mev;
+
+intx.onkeypress = function(evt){
+	if(evt.keyCode == 13){
+		evt.preventDefault();
+		mev();
+	}
 }

@@ -1,4 +1,4 @@
-const CACHE_NAME = `CalsyWeb-v4`;
+const CACHE_NAME = `CalsyWeb-v5`;
 
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
