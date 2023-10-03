@@ -1,7 +1,7 @@
 {
     "lang": "en-us",
-    "name": "CalsyWeb",
-    "short_name": "CalsyWeb",
+    "name": "MathematicsWeb Pro",
+    "short_name": "MathWeb Pro",
 	"id": "/",
     "description": "An HTML5 PWA Calculator",
     "start_url": "./",

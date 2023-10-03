@@ -36,7 +36,13 @@ math.import({
 
 
 {
-	let funs = ["+", "-", "*", "/", "(", ")", "!", "^", "e"];
+	let funs = [
+	"+", "-", "*", 
+	"/", "(", ")", 
+	"!", "^", "e",
+	"sin(", "cos(", "tan(",
+	"sqrt(", "cbrt(", "abs("
+	];
 	let fbtnsnode = document.querySelectorAll("[id^='btn-fun-']");
 	let fbtns = Array.from(fbtnsnode);
 	fbtns = fbtns.filter(function(fbtn){
