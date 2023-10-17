@@ -87,3 +87,20 @@ intx.onkeypress = function(evt){
 		mev();
 	}
 }
+
+function resizeWin() {
+	const allBtn = document.getElementsByTagName("button");
+    if (window.innerHeight > window.innerWidth) {
+        console.log("The page is in portrait orientation.");
+		for(const btn of allBtn){
+			btn.style.width = "";
+		}
+    } else {
+        console.log("The page is in landscape orientation.");
+		for(const btn of allBtn){
+			btn.style.width = "4vw";
+		}
+    }
+}
+resizeWin();
+window.addEventListener('resize', resizeWin);
